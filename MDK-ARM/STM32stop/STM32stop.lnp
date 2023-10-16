@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"stm32stop\startup_stm32f103xe.o"
+"stm32stop\msdelay.o"
+"stm32stop\main.o"
+"stm32stop\gpio.o"
+"stm32stop\tim.o"
+"stm32stop\stm32f1xx_it.o"
+"stm32stop\stm32f1xx_hal_msp.o"
+"stm32stop\stm32f1xx_hal_gpio_ex.o"
+"stm32stop\stm32f1xx_hal_tim.o"
+"stm32stop\stm32f1xx_hal_tim_ex.o"
+"stm32stop\stm32f1xx_hal.o"
+"stm32stop\stm32f1xx_hal_rcc.o"
+"stm32stop\stm32f1xx_hal_rcc_ex.o"
+"stm32stop\stm32f1xx_hal_gpio.o"
+"stm32stop\stm32f1xx_hal_dma.o"
+"stm32stop\stm32f1xx_hal_cortex.o"
+"stm32stop\stm32f1xx_hal_pwr.o"
+"stm32stop\stm32f1xx_hal_flash.o"
+"stm32stop\stm32f1xx_hal_flash_ex.o"
+"stm32stop\stm32f1xx_hal_exti.o"
+"stm32stop\system_stm32f1xx.o"
+--strict --scatter "STM32stop\STM32stop.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STM32stop.map" -o STM32stop\STM32stop.axf
